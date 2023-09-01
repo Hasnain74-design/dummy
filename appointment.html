@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Vission Consultant </title>
+
+  <script>
+    // Render blocking JS:
+    if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+  </script>
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+  <!-- Libs CSS -->
+  <link href="assets/fonts/feather/feather.css" rel="stylesheet">
+  <link href="assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="assets/css/theme.min.css">
+  <link rel="stylesheet" href="assets/css/hover-min.css">
+  <link href="assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+  <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/swiper-bundle.min.js"></script>
+</head>
+
+<body class="bg-white ">
+  <!-- header top -->
+  <div class="header_top">
+
+  </div>
+
+  <!-- navbar -->
+  <nav>
+
+  </nav>
+  <!-- Page Content -->
+  <main>
+    <link rel="stylesheet" href="assets/libs/bootstrap-select/dist/css/bootstrap-select.min.css">
+
+
+    <!-- Page Content -->
+    <section class="container-fluid appointmentSection">
+      <div class="row align-items-center min-vh-100">
+        <!-- col -->
+        <div class="col-lg-6 col-md-12 col-12">
+          <div class="px-xl-20 py-7 py-lg-0">
+            <div class="py-5 my-5">
+              <h1 class="secTitle">Get In Touch.</h1>
+              <p class="secPara">
+                Fill in the form to the right to get in touch with someone on
+                our team, and we will reach out shortly.
+              </p>
+              <div class="mt-8 fs-4 socialLinks">
+                <!-- address -->
+                <h3>Karachi</h3>
+                <p><i class="bi bi-envelope text-primary me-2"></i> <a href="mailto:info@vissionconsult.com" class="ContactEmailKH"></a></p>
+                <p><i class="bi bi-phone text-primary me-2"></i> <a href="tel:+921234567" class="ContactNoKH"></a> </p>
+                <p><i class="bi bi-geo-alt text-primary me-2"></i> <a class="OfficeAddressKH"></a></p>
+
+                <h3 class="mt-3">Islamabad</h3>
+                <p><i class="bi bi-envelope text-primary me-2"></i> <a href="mailto:info@vissionconsult.com" class="ContactEmailISL"></a></p>
+                <p><i class="bi bi-phone text-primary me-2"></i> <a href="tel:+921234677" class="ContactNoISL"></a> </p>
+                <p><i class="bi bi-geo-alt text-primary me-2"></i> <a class="OfficeAddressISL"></a></p>
+
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <!-- background color -->
+        <div
+          class="col-lg-6 d-lg-flex align-items-center w-lg-50 min-vh-lg-100 position-fixed-lg bg-cover bg-light top-0 right-0 shadow my-5" style="border-radius: 20px;">
+          <div class="px-4 px-xxl-20 px-xl-14 py-8 py-lg-0">
+            <!-- form section -->
+            <div id="form">
+
+              <!-- form row -->
+              <form class="row" method="POST" action="">
+                <!-- form group -->
+                <div class="mb-3 col-12 col-md-6">
+                  <label class="form-label" for="name">Your Name:<span class="text-danger">*</span></label>
+                  <input class="form-control" type="text" name="contact_name" id="name" placeholder="Your Name"
+                    required />
+                  <span class="text-danger"></span>
+                </div>
+                <!-- form group -->
+                <div class="mb-3 col-12 col-md-6">
+                  <label class="form-label" for="email">Email:<span class="text-danger">*</span></label>
+                  <input class="form-control" type="email" name="contact_email" id="email" placeholder="Email"
+                    required />
+                  <span class="text-danger"></span>
+                </div>
+                <!-- form group -->
+                <div class="mb-3 col-12 col-md-6">
+                  <label class="form-label" for="phone">Phone Number:<span class="text-danger">*</span></label>
+                  <input class="form-control" type="text" name="contact_mobile" id="phone" placeholder="Phone"
+                    required />
+                  <span class="text-danger"></span>
+                </div>
+                <div class="mb-3 col-12 col-md-6">
+                  <label class="form-label" for="select">Subject</label>
+                  <select class="form-select" id="select" name="contact_subject">
+                    <option selected="" value="">Select</option>
+                    <option value="1">Carrer Counselling</option>
+                    <option value="2">Whistleblowing</option>
+                    <option value="3">Interpersonal Issues</option>
+                    <option value="4">Formal complaint</option>
+                    <option value="5">Serious Complaint</option>
+                  </select>
+                  <span id="error_contact_subject" class="text-danger"></span>
+                </div>
+                <!-- form group -->
+                <div class="mb-3 col-12">
+                  <label class="text-dark form-label" for="city">City<span class="text-danger">*</span></label>
+                  <select class="selectpicker" id="city" name="contact_city" data-width="100%">
+                    <option value="" selected>Select city</option>
+                    <option value="1">Karachi</option>
+                    <option value="2">Islamabad</option>
+                    <option value="3">Rawalpindi</option>
+                    <option value="0">other</option>
+                  </select>
+                  <span class="text-danger"></span>
+                </div>
+                <!-- form group -->
+                <div class="mb-3 col-12">
+                  <label class="text-dark form-label" for="messages">Message:</label>
+                  <textarea class="form-control" name="contact_message" id="messages" rows="3"
+                    placeholder="Messages"></textarea>
+                  <span class="text-danger"></span>
+                </div>
+                <!-- button -->
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary btn-block">
+                    Book a Free Appppointment
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+  </main>
+
+  <div class="extras">
+  </div>
+  
+  <!-- footer -->
+  <footer>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/libs/typed.js/dist/typed.umd.js"></script>
+  <!-- Libs JS -->
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <!-- Theme JS -->
+  <script src="assets/js/theme.min.js"></script>
+
+  <script src="assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+
+  <script src="assets/js/vendors/tnsSlider.js"></script>
+  <script src="assets/js/vendors/tooltip.js"></script>
+  <script src="assets/libs/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+  <!-- 
+<script>const jsonData = <?php include $assets_dir.'includes/fetch-site-contact.php'; ?>;</script> -->
+  <script src="assets/js/script.js"></script>
+
+
+</body>
+
+</html>

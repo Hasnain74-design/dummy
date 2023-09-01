@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+
+	<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>Vission Consultant </title>
+<link rel="canonical" href="">
+
+<script>
+    // Render blocking JS:
+    if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+    </script>
+
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+
+
+
+<!-- Libs CSS -->
+<link href="assets/fonts/feather/feather.css" rel="stylesheet">
+<link href="assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+<!-- <link href="assets/libs/%40mdi/font/css/materialdesignicons.min.css" rel="stylesheet" />
+<link href="assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet"> -->
+
+
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="assets/css/theme.min.css">
+<link href="assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+
+</head>
+<body class="bg-white ">
+<header>
+<div class="header_top">
+  <div class="row container">
+    <div class="col-12 header_top_info_box">
+      <div class="header_top_info_toogle">
+          <div class="active"> 
+            <span id="top_bar_btn">Karachi Office </span>
+          </div>
+          <ul>
+            <li id="top_bar_info_1"> Karachi Office</li>
+            <li> <a  href="javascript:void(0);" id="top_bar_info_2">Islamabad Office</a></li>
+          </ul>
+      </div>
+      <ul class="header_top_info" id="header_top_info1">
+        <li > <i class="bi bi-geo-alt text-primary me-2"></i>  <span class="OfficeAddressKH"></span></li>
+        <li> <i class="bi bi-clock text-primary me-2"></i> <span> Mon - Sat 10.00 - 6.00</span></li>
+        <li> <i class="bi bi-envelope text-primary me-2"></i>  <span class="ContactEmailKH"></span></a>
+      </ul>
+      <ul class="header_top_info" id="header_top_info2" style="display: none;">
+        <li > <i class="bi bi-geo-alt text-primary me-2"></i>  Islamabad, Pakistan  <span class="OfficeAddressISL"></span></li>
+        <li> <i class="bi bi-clock text-primary me-2"></i> <span> Mon - Sat 10.00 - 6.00</span></li>
+        <li> <i class="bi bi-envelope text-primary me-2"></i>  <span class="ContactEmailISL"></span></a>
+      </ul>
+  </div>
+</div>
+</div>
+<style>
+        /* CSS styles for the sticky navigation bar */
+        .sticky {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        /* Add more styles for your navigation bar as needed */
+    </style>
+  <!-- navbar login -->
+<nav class="navbar navbar-expand-lg" id="navbar">
+  <div class="container px-0 ">
+    <a class="navbar-brand text-dark" href="ndex.php">
+      <!-- <img src="assets/images/brand/logo/logo.svg"
+        alt=""> -->
+       <div class="companyLogo">
+          <h1>TheVission</h1>
+          <span>Consultant</span>
+       </div>
+      </a>
+        <div class="d-flex align-items-center order-lg-3 ms-lg-3">
+          <div class="d-flex align-items-center">
+          <a href="appointment.php" class="btn btn-primary d-none d-md-block">Free Appointment</a>
+            </div>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default"
+            aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar top-bar mt-0"></span>
+            <span class="icon-bar middle-bar"></span>
+            <span class="icon-bar bottom-bar"></span>
+          </button>
+        </div>
+    <!-- Button -->
+
+    <!-- Collapse -->
+    <div class="collapse navbar-collapse" id="navbar-default">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link" href="index.php">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarListing" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Study
+          </a>
+          <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
+
+            <li>
+            <a class="dropdown-item " href="top-countries.php">
+                All Destinations
+              </a>
+              </li>
+              <li>
+              <a class="dropdown-item " href="country/study-in-uk.php">
+                Study In UK
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item " href="country/study-in-canada.php">
+                Study In Canada
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="country/study-in-usa.php">
+                Study In USA
+              </a>
+            </li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarListing" data-bs-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Immigration
+            </a>
+            <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
+              <li>
+                <a class="dropdown-item " href="immigration/immigration-to-canada.php">
+                    Immigration To Canada
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="immigration/immigration-to-australia.php">
+                 Immigration To Australia
+                </a>
+              </li>
+  
+            </ul>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link theme-subtext-color" href="visiting-tourism.php">Vissiting & Tourism</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarListing" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
+
+            <li>
+                <a class="dropdown-item " href="contact-us.php">
+                    Contact Us
+                  </a>
+            </li>
+            <li>
+            <a class="dropdown-item " href="company-history.php">
+                Our History
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="testimonial.php">
+                Client Reviews
+              </a>
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+</nav>
+
+</header>
+<!-- Page Content -->
+  <main>
+
+    
+    <section class="py-8 bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="offset-md-2 col-md-8 col-12 ">
+              <!-- caption-->
+              <h1 class="fw-bold mb-0 display-4 lh-1">Feedback</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- container  -->
+      <section class="pt-3">
+        <div class="container">
+          <div class="row">
+            <div class="offset-md-2 col-md-8 col-12">
+              <div>
+                 <!-- breadcrumb  -->
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Feedback </li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+       <!-- container  -->
+      <section class="py-lg-10 py-7">
+        <div class="container">
+          <div class="row ">
+            <div class="offset-md-2 col-md-8 col-12">
+              <div class="mb-3">
+                 <!-- lead  -->
+                <p class="lead mb-8">Your feedback make us more strong and help to resolve the hidden issues of your's.
+                </p>
+                <div class="d-flex justify-content-between">
+                  <span></span>
+                  <div class="text-end">
+                  <span class="ContactEmailKH"></span>
+                  </div>
+                </div>
+              </div>
+              <div>
+                 <!-- card -->
+                <div class="card border">
+                   <!-- card body  -->
+                  <div class="card-body p-5">
+                    <h2 class="mb-4 fw-semibold">Submit a Feedback</h2>
+                     <!-- form  -->
+                    <form action="" method="POST">
+                       <!-- input  -->
+                      <div class="mb-3">
+                        <label class="form-label" for="name">Your Name</label>
+                        <input class="form-control" type="text" placeholder="Your name" name="feedback_name" id="name" required>
+                        <span id="error_feedback_name" class="text-danger"></span>
+                      </div>
+                          <!-- input  -->
+                      <div class="mb-3">
+                        <label class="form-label" for="email">Email Address <span class="text-danger">*</span></label>
+                        <input class="form-control" type="text" placeholder="Email address" name="feedback_email" id="email" required>
+                        <span id="error_feedback_email" class="text-danger"></span>
+                      </div>
+                      <div class="mb-3 mb-4">
+                         <label for="feedback_mobile" class="form-label">Mobile</label>
+                          <input class="form-control" id="feedback_mobile" placeholder="Mobile Number" value="03053998521" name="feedback_mobile" type="number" required="">
+                           <span id="error_feedback_mobile" class="text-danger"></span>
+                      </div>
+                      <div class="mb-3">
+                            <!-- input  -->
+                        <label class="form-label" for="feedback_comment">Comment Or Explain</label>
+                        <textarea placeholder="Write down here" name="feedback_comment" id="feedback_comment" rows="2" class="form-control"></textarea>
+                        <span id="error_feedback_comment" class="text-danger"></span>
+                      </div>
+                          <!-- button  -->
+                      <button class="btn btn-primary" type="submit">Submit</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+<style>
+  .footer .nav-link{
+    color:#fff !important;
+  }
+</style>
+      <!-- footer -->
+      <footer class="pt-lg-10 pt-5 footer bg-primary text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                  <!-- about company -->
+              <div class="mb-4">
+<!--                <img src="assets/images/brand/logo/logo.svg" alt="" class="logo-inverse "> -->
+                  <div class="companyLogo">
+                      <h1 style="color:#fff;">TheVission</h1>
+                      <span>Consultant</span>
+                  </div>
+                <div class="mt-4">
+                  <p>Geek is feature-rich components and beautifully Bootstrap UIKit for developers, built with bootstrap responsive framework.</p>
+                     <!-- social media -->
+                  <div class="fs-4 mt-4">
+                    <a href="#" class="mdi mdi-facebook fs-4 text-muted me-2"></a>
+                    <a href="#" class="mdi mdi-twitter text-muted me-2"></a>
+                    <a href="#" class="mdi mdi-instagram text-muted "></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                    <!-- list -->
+                <h3 class="fw-bold mb-3">Company</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li><a href="company-history.php" class="nav-link">About</a></li>
+                  <li><a href="feedback.php" class="nav-link">Feedback</a></li>
+                  <!-- <li><a href="blogs.php" class="nav-link">Blogs</a></li> -->
+                  <li><a href="top-countries.php" class="nav-link">Top Institute</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+              <div class="mb-4">
+                    <!-- list -->
+                <h3 class="fw-bold mb-3">Support</h3>
+                <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                  <li><a href="contact-us.php" class="nav-link">Help and Support</a></li>
+                  <li><a href="how-we-work.php" class="nav-link">How we work</a></li>
+                  <li><a href="testimonial.php" class="nav-link">Our Client Feedback</a></li>
+                  <li><a href="faq.php" class="nav-link">FAQ’s</a></li>
+                </ul>
+
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                  <!-- contact info -->
+              <div class="mb-4">
+                <h3 class="fw-bold mb-3">Get in touch</h3>
+                <p>
+                 <b>Karachi: </b><span class="OfficeAddressKH"></span> <br>
+                 <b>Islamabad: </b><span class="OfficeAddressISL"></span>
+                </p>
+                <p class="mb-1 text-white ">Email: <a href="javascript:void(0);">
+                <span class="ContactEmailKH text-white"></span>
+                </a></p>
+                <p>Phone: <span class="fw-semibold">
+                <b>Karachi: </b><span class="ContactNoKH"></span> <br>
+                 <b>Islamabad: </b><span class="ContactNoISL"></span>
+                </span></p>
+
+
+
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center g-0 border-top py-2 mt-6">
+            <!-- Desc -->
+            <div class="col-lg-4 col-md-5 col-12">
+                <span>© <span id="copyright2">
+                  <script>document.getElementById('copyright2').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+              </span> TheVissionConsulltant. All Rights Reserved</span>
+                </div>
+
+              <!-- Links -->
+            <div class="col-12 col-md-7 col-lg-8 d-md-flex justify-content-end">
+                <nav class="nav nav-footer">
+                    <a class="nav-link ps-0" href="privacy-policy.php">Privacy Policy</a>
+                    <a class="nav-link" href="terms-conditions.php">Terms of Use</a>
+                </nav>
+            </div>
+        </div>
+        </div>
+      </footer>
+
+
+  <!-- Scripts -->
+  <script src="assets/libs/typed.js/dist/typed.umd.js"></script>
+    <!-- Libs JS -->
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <!-- Theme JS -->
+  <script src="assets/js/theme.min.js"></script>
+
+  <script src="assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+
+  <script src="assets/js/vendors/tnsSlider.js"></script>
+  <script src="assets/js/vendors/tooltip.js"></script>
+
+<!-- 
+<script>const jsonData = <?php include $assets_dir.'includes/fetch-site-contact.php'; ?>;</script> -->
+<script src="assets/js/script.js"></script>
+<script>
+      
+window.onload = (event) => {
+  // Get the navigation bar element
+  const navbar = document.getElementById('navbar');
+
+  // Function to add the "sticky" class to the navigation bar
+  function makeNavbarSticky() {
+      navbar.classList.add('sticky');
+  }
+
+  // Function to remove the "sticky" class from the navigation bar
+  function makeNavbarUnsticky() {
+      navbar.classList.remove('sticky');
+  }
+
+  // Function to handle scroll event and apply sticky class accordingly
+  function handleScroll() {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      // Choose a threshold value to determine when to apply the sticky class
+      const threshold = 220; // You can adjust this value based on your needs
+
+      if (scrollTop >= threshold) {
+          makeNavbarSticky();
+      } else {
+          makeNavbarUnsticky();
+      }
+  }
+
+  // Add a scroll event listener to trigger the sticky behavior
+  window.addEventListener('scroll', handleScroll);
+
+  //header top
+  document.querySelector('#top_bar_info_1').addEventListener('click',function(){
+      document.getElementById('top_bar_btn').innerText = "Karachi Office";
+      document.getElementById('header_top_info2').style.display = "none";
+      document.getElementById('header_top_info1').style.display = "flex";
+  });
+  document.getElementById('top_bar_info_2').addEventListener('click',function(){
+    alert("helo");
+      document.getElementById('top_bar_btn').innerText = "Islamabad Office";
+      document.getElementById('header_top_info1').style.display = "none";
+      document.getElementById('header_top_info2').style.display = "flex";
+  });
+    const ContactClassKH =document.querySelectorAll(".ContactNoKH");
+    const EmailClassKH =document.querySelectorAll(".ContactEmailKH");
+    const AddressClassKH =document.querySelectorAll(".OfficeAddressKH");
+
+    const ContactClassISL =document.querySelectorAll(".ContactNoISL");
+    const EmailClassISL =document.querySelectorAll(".ContactEmailISL");
+    const AddressClassISL =document.querySelectorAll(".OfficeAddressISL");
+
+      // Embed the JSON data directly into a JavaScript variable
+      // const jsonData = <?php include 'includes/fetch-site-contact.php'; ?>;
+
+      const jsonData = [{"id":"1","name":"Karachi","phone":"+92 12345 67","email":"info@vissionconsult.com","address":"Gulshan Iqbal Block-14, Karachi, Pakistan","status":"1"},{"id":"2","name":"Islamabad","phone":"+92 1234 677","email":"info@vissionconsult.com","address":"Gulshan Iqbal Block-14, Islamabad, Pakistan","status":"1"}];
+            // Loop through the contacts and print each one
+      jsonData.forEach((contact) => {
+          if (contact.name === 'Karachi') {
+              // Print KarachiContact in the "karachiContactData" container
+              if(ContactClassKH.length > 0){
+                ContactClassKH.forEach((phone)=>{
+                  phone.append(contact.phone);
+                })
+              }
+              if(EmailClassKH.length > 0){
+                  EmailClassKH.forEach((email)=>{
+                  email.innerHTML =contact.email;
+                })
+              }
+              if(AddressClassKH.length > 0){
+                AddressClassKH.forEach((address)=>{
+                  address.append(contact.address);
+                })
+              }
+              // karachiContactDataElement.innerHTML = `<h2>Karachi Contact</h2>${getContactHTML(contact)}`;
+          } else {
+             // Print IslambabadContact in the "IslambabadContactData" container
+             if(ContactClassISL.length > 0){
+                ContactClassISL.forEach((phone)=>{
+                  phone.append(contact.phone);
+                })
+              }
+              if(EmailClassISL.length > 0){
+                  EmailClassISL.forEach((email)=>{
+                  email.innerHTML =contact.email;
+                })
+              }
+              if(AddressClassISL.length > 0){
+                AddressClassISL.forEach((address)=>{
+                  address.append(contact.address);
+                })
+              }
+          }
+      });
+  };
+
+    </script>
+</body>
+</html>

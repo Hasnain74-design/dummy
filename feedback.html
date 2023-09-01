@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>Vission Consultant </title>
+
+  <script>
+    // Render blocking JS:
+    if (localStorage.theme) document.documentElement.setAttribute("data-theme", localStorage.theme);
+  </script>
+
+  <!-- Favicon icon-->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon/favicon.ico">
+  <!-- Libs CSS -->
+  <link href="assets/fonts/feather/feather.css" rel="stylesheet">
+  <link href="assets/libs/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Theme CSS -->
+  <link rel="stylesheet" href="assets/css/theme.min.css">
+  <link rel="stylesheet" href="assets/css/hover-min.css">
+  <link href="assets/libs/tiny-slider/dist/tiny-slider.css" rel="stylesheet">
+  <link href="assets/css/swiper-bundle.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/swiper-bundle.min.js"></script>
+
+</head>
+
+<body class="bg-white ">
+  
+  <!-- header top -->
+  <div class="header_top">
+  </div>
+
+  <!-- navbar -->
+  <nav>
+  </nav>
+
+  <!-- Page Content -->
+  <main>
+
+    <section class="py-8 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="offset-md-2 col-md-8 col-12 ">
+            <!-- caption-->
+            <h1 class="fw-bold mb-0 display-4 lh-1 text-center">Feedback</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- container  -->
+    <section class="py-lg-10 py-7">
+      <div class="container">
+        <div class="row ">
+          <div class="offset-md-2 col-md-8 col-12">
+            <div class="mb-5">
+              <!-- lead  -->
+              <p class="secPara text-center">Your feedback make us more strong and help to resolve the hidden issues of your's.
+              </p>
+            </div>
+            <div>
+              <!-- card -->
+              <div class="card shadow">
+                <!-- card body  -->
+                <div class="card-body p-5">
+                  <h2 class="mb-4 secTitle">Submit a Feedback</h2>
+                  <!-- form  -->
+                  <form action="" method="POST" class="iconColor">
+                    <!-- input  -->
+                    <div class="mb-3">
+                      <label class="form-label" for="name">Your Name</label>
+                      <input class="form-control" type="text" placeholder="Your name" name="feedback_name" id="name"
+                        required>
+                      <span id="error_feedback_name" class="text-danger"></span>
+                    </div>
+                    <!-- input  -->
+                    <div class="mb-3">
+                      <label class="form-label" for="email">Email Address <span class="text-danger">*</span></label>
+                      <input class="form-control" type="text" placeholder="Email address" name="feedback_email"
+                        id="email" required>
+                      <span id="error_feedback_email" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3 mb-4">
+                      <label for="feedback_mobile" class="form-label">Mobile</label>
+                      <input class="form-control" id="feedback_mobile" placeholder="Mobile Number" value="03053998521"
+                        name="feedback_mobile" type="number" required="">
+                      <span id="error_feedback_mobile" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                      <!-- input  -->
+                      <label class="form-label" for="feedback_comment">Comment Or Explain</label>
+                      <textarea placeholder="Write down here" name="feedback_comment" id="feedback_comment" rows="2"
+                        class="form-control"></textarea>
+                      <span id="error_feedback_comment" class="text-danger"></span>
+                    </div>
+                    <!-- button  -->
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+  <div class="extras">
+  </div>
+  
+  <!-- footer -->
+  <footer>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/libs/typed.js/dist/typed.umd.js"></script>
+  <!-- Libs JS -->
+  <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+  <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
+  <!-- Theme JS -->
+  <script src="assets/js/theme.min.js"></script>
+
+  <script src="assets/libs/tiny-slider/dist/min/tiny-slider.js"></script>
+  <script src="assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+  <script src="assets/libs/tippy.js/dist/tippy-bundle.umd.min.js"></script>
+
+  <script src="assets/js/vendors/tnsSlider.js"></script>
+  <script src="assets/js/vendors/tooltip.js"></script>
+
+  <!-- 
+<script>const jsonData = <?php include $assets_dir.'includes/fetch-site-contact.php'; ?>;</script> -->
+  <script src="assets/js/script.js"></script>
+  
+</body>
+
+</html>
